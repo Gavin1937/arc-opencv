@@ -6,6 +6,8 @@
 really simular to opencv-490-win64-msvc-no-world.zip, but I forget the exact command.
 
 ### opencv-490-win64-msvc-no-world.zip
+same as opencv-490-win64-msvc.zip, but disabled module `opencv_world`
+
 ```sh
 cmake -S opencv-4.9.0 -B build_opencv_no_world \
     -DCMAKE_BUILD_TYPE=RelWithDebInfo \

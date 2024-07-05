@@ -6,8 +6,8 @@ General configuration for OpenCV 4.9.0 =====================================
     Version control (extra):     unknown
 
   Platform:
-    Timestamp:                   2024-01-28T04:53:11Z
-    Host:                        Windows 10.0.22621 AMD64
+    Timestamp:                   2024-07-05T00:08:23Z
+    Host:                        Windows 10.0.22631 AMD64
     CMake:                       3.28.1
     CMake generator:             Visual Studio 17 2022
     CMake build tool:            C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe
@@ -38,22 +38,22 @@ General configuration for OpenCV 4.9.0 =====================================
     Linker flags (Release):      /machine:x64  /INCREMENTAL:NO
     Linker flags (Debug):        /machine:x64  /debug /INCREMENTAL
     ccache:                      NO
-    Precompiled headers:         NO
+    Precompiled headers:         YES
     Extra dependencies:
     3rdparty dependencies:
 
   OpenCV modules:
-    To be built:                 alphamat aruco bgsegm bioinspired calib3d ccalib core datasets dnn dnn_objdetect dnn_superres dpm face features2d flann fuzzy gapi hfs highgui img_hash imgcodecs imgproc intensity_transform line_descriptor mcc ml objdetect optflow phase_unwrapping photo plot quality rapid reg rgbd saliency shape stereo stitching structured_light superres surface_matching text tracking video videoio videostab wechat_qrcode world xfeatures2d ximgproc xobjdetect xphoto
-    Disabled:                    -
+    To be built:                 alphamat aruco bgsegm bioinspired calib3d ccalib core datasets dnn dnn_objdetect dnn_superres dpm face features2d flann fuzzy gapi hfs highgui img_hash imgcodecs imgproc intensity_transform line_descriptor mcc ml objdetect optflow phase_unwrapping photo plot quality rapid reg rgbd saliency shape stereo stitching structured_light superres surface_matching text tracking video videoio videostab wechat_qrcode xfeatures2d ximgproc xobjdetect xphoto
+    Disabled:                    python3 world
     Disabled by dependency:      -
-    Unavailable:                 cannops cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev cvv freetype hdf java julia matlab ovis python2 python3 sfm ts viz
+    Unavailable:                 cannops cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev cvv freetype hdf java julia matlab ovis python2 sfm ts viz
     Applications:                apps
     Documentation:               NO
     Non-free algorithms:         YES
 
   Windows RT support:            NO
 
-  GUI:
+  GUI:                           WIN32UI
     Win32 UI:                    YES
     VTK support:                 NO
 
@@ -91,9 +91,9 @@ General configuration for OpenCV 4.9.0 =====================================
 
   Other third-party libraries:
     Intel IPP:                   2021.11.0 [2021.11.0]
-           at:                   C:/opencv-4.9.0/build_opencv/3rdparty/ippicv/ippicv_win/icv
+           at:                   C:/opencv-4.9.0/build_opencv_no_world/3rdparty/ippicv/ippicv_win/icv
     Intel IPP IW:                sources (2021.11.0)
-              at:                C:/opencv-4.9.0/build_opencv/3rdparty/ippicv/ippicv_win/iw
+              at:                C:/opencv-4.9.0/build_opencv_no_world/3rdparty/ippicv/ippicv_win/iw
     Lapack:                      NO
     Eigen:                       YES (ver 3.4.0)
     Custom HAL:                  NO
@@ -106,12 +106,5 @@ General configuration for OpenCV 4.9.0 =====================================
 
   Python (for build):            C:/Users/user/AppData/Local/Programs/Python/Python311/python.exe
 
-  Java:
-    ant:                         NO
-    Java:                        YES (ver 17.0.5)
-    JNI:                         C:/Program Files/Java/jdk-17.0.5/include C:/Program Files/Java/jdk-17.0.5/include/win32 C:/Program Files/Java/jdk-17.0.5/include
-    Java wrappers:               NO
-    Java tests:                  NO
-
-  Install to:                    C:/opencv-4.9.0/build_opencv/install
+  Install to:                    C:/opencv-4.9.0/build_opencv_no_world/install
 -----------------------------------------------------------------
